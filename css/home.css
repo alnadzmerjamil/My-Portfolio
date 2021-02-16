@@ -9,6 +9,9 @@ a {
   color: white;
   font-size: 12px;
 }
+.anchor {
+  color: black;
+}
 body {
   background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
 }
