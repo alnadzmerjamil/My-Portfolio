@@ -1,0 +1,156 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+.anchor {
+  color: black;
+  text-decoration: none;
+  font-size: 14px;
+}
+.anchor:hover {
+  text-decoration: none;
+}
+body {
+  background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
+}
+#div-for-main-container-project {
+  width: 70%;
+  padding: 2px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* min-height: 100vh; */
+  /* background-color: teal; */
+}
+#project-container {
+  width: 100%;
+  padding: 10px;
+  margin-top: 25px;
+  /* box-shadow: 1px 2px 15px blue inset; */
+  border: 2px solid whitesmoke;
+  background: white;
+}
+#work-text {
+  width: 100%;
+  padding: 10px;
+  font-size: 24px;
+  margin-bottom: 10px;
+  background-color: rgb(170, 193, 236);
+}
+#project-text {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  background-color: rgb(170, 193, 236);
+}
+
+#div-for-project {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  align-self: baseline;
+  background-color: white;
+}
+#div-for-project img {
+  width: 70%;
+}
+#buddy-shop,
+#blackjack,
+#buddyz-travel {
+  width: 25%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  border-radius: 10px;
+  background-color: white;
+}
+#blackjack {
+  padding: 15px 0px 0px;
+}
+#buddy-shop:hover,
+#blackjack:hover,
+#buddyz-travel:hover {
+  box-shadow: 0px 1px 5px rgb(170, 193, 236);
+}
+
+#blackjack-text,
+#buddyz-travel-text {
+  width: 100%;
+  background-color: wheat;
+  text-align: right;
+  padding-right: 10px;
+}
+#div-for-buddy-shop-text {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  padding: 10px;
+}
+#buddy-shop-text {
+  width: 79%;
+  /* background-color: rgb(58, 212, 212); */
+  text-align: right;
+}
+.span-for-img {
+  width: 20%;
+  /* background-color: brown; */
+}
+.img {
+  width: 100%;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.img:hover {
+  opacity: 1;
+  background-color: rgb(85, 217, 240);
+}
+
+/* HOMEWORKS */
+#homework-text {
+  width: 100%;
+  padding: 5px;
+  margin: 10px 0px 10px 0px;
+  background-color: rgb(170, 193, 236);
+}
+#div-for-homeworks {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: stretch;
+  background-color: white;
+}
+
+#div-for-homeworks img {
+  width: 100%;
+}
+
+#img-homework {
+  width: 50%;
+}
+.div-per-homework {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  width: 18%;
+}
+.div-per-homework:hover {
+  box-shadow: 0px 1px 5px rgb(170, 193, 236);
+}
+.homework-title-text {
+  width: 100%;
+  text-align: right;
+  padding: 0px 10px 10px 0px;
+  /* background-color: brown; */
+}

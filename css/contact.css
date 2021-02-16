@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
+}
+#div-for-main-contact {
+  width: 50%;
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
+}
+#main-contact {
+  width: 100%;
+  background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
+}
+#div-for-contact-me {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: lightgray;
+}
+#div-for-contact-me p {
+  font-size: 24px;
+  padding: 5px;
+}
+#email {
+  font-size: 20px;
+  padding: 5px;
+}
+#div-for-email {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
+  /* background-color: white; */
+}
+#social-media-text {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 20px;
+  /* background-color: lightgray; */
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+}
+#groups {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: flex-end;
+  /* background-color: blue; */
+  padding: 29px 0px 0px;
+  margin-top: 5px;
+}
+
+#div-linkedin,
+#div-fb {
+  width: 10%;
+  padding: 2px;
+  margin: 10px;
+  /* background-color: greenyellow; */
+}
+
+#img-linkedin,
+#img-fb {
+  width: 100%;
+  cursor: pointer;
+}
+
+#img-fb:hover,
+#img-linkedin:hover {
+  opacity: 0.5;
+  transform: scale(1.1);
+}

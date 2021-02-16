@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+body {
+  background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
+}
+/* Content */
+
+#div-for-about {
+  width: 65%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* background-color: darkslateblue;
+  padding: 2px; */
+}
+#div-for-about-me {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+  background-color: white;
+}
+#about-me-text {
+  width: 20%;
+  padding: 10px;
+  text-align: center;
+  font-size: 24px;
+  background-color: white;
+}
+#about-me-content {
+  width: 80%;
+  padding: 10px;
+  line-height: 25px;
+  font-size: 14px;
+  background-color: white;
+}
+#div-for-skills {
+  width: 100%;
+  padding: 0 10px;
+  background-color: white;
+  /* margin-top: 5px; */
+}
+#skills-text {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(170, 193, 236);
+}
+#div-skills-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 10px;
+  background-color: white;
+}
+
+.skills-group {
+  /* frontend / backend */
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 5px;
+  padding: 10px;
+  /* background-color: darkgoldenrod; */
+}
+.div-per-img {
+  width: 100%;
+  /* padding: 10px; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-end;
+  margin-bottom: 5px;
+  /* background-color: darkgrey; */
+}
+.div-for-img-skills {
+  width: 15%;
+  padding: 5px;
+  /* background-color: darkmagenta; */
+}
+.div-for-img-skills :hover {
+  box-shadow: 0px 1px 5px rgb(93, 142, 235);
+}
+.img-front-end {
+  width: 100%;
+}
+.name-of-skills {
+  width: 85%;
+  padding: 10px 10px 0px 10px;
+  /* background-color: darkorange; */
+}
+
+/* Education */
+#div-for-education {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+#education-text {
+  width: 100%;
+  padding: 5px;
+  background-color: rgb(170, 193, 236);
+}
+#div-education {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: white;
+}
+.name-of-school {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+  margin-top: 5px;
+  /* background-color: darkgoldenrod; */
+}
+.div-for-school-logo {
+  width: 5%;
+  padding: 2px;
+  /* background-color: rgb(223, 16, 16); */
+}
+.img-logo-of-school {
+  width: 100%;
+}
+.name-of-school-text {
+  width: 35%;
+  padding: 10px;
+  /* background-color: darkgreen; */
+}
+.course {
+  width: 60%;
+  padding: 10px;
+  /* background-color: darkmagenta; */
+}
