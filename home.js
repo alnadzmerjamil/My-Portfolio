@@ -9,6 +9,10 @@ hamburger.addEventListener('click', () => {
     menuContainer.style.display = 'none';
   }
 });
+let arrow = document.querySelector('#work-text');
+arrow.addEventListener('click', function () {
+  alert('Description not available');
+});
 // let x = document.querySelector('#div-for-menu-container');
 // x.addEventListener('mouseout', function () {
 //   alert();
@@ -52,8 +56,8 @@ hamburger.addEventListener('click', () => {
 //   alert();
 // });
 
-// let upNavBar = document.querySelector('#up-nav');
-// let x = document.querySelector('#strong-name');
-// x.addEventListener('mouseover', function () {
-//   alert(upNavBar.style.top);
-// });
+let upNavBar = document.querySelector('#up-nav');
+let x = document.querySelector('#strong-name');
+x.addEventListener('mouseover', function () {
+  alert(upNavBar.style.top);
+});
