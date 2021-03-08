@@ -5,19 +5,24 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 body {
-  background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  background: white;
 }
+
 #div-for-main-contact {
-  width: 50%;
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
+  width: 80%;
+  margin: auto;
+  margin-top: 50px;
+  padding: 5px;
+  /* background: rgb(243, 61, 61); */
 }
 #main-contact {
   width: 100%;
-  background: linear-gradient(to right, rgb(54, 69, 100), cornflowerblue);
+  background: whitesmoke;
 }
 #div-for-contact-me {
   width: 100%;
@@ -26,11 +31,11 @@ body {
   background-color: lightgray;
 }
 #div-for-contact-me p {
-  font-size: 24px;
+  font-size: 27px;
   padding: 5px;
 }
 #email {
-  font-size: 20px;
+  font-size: 15px;
   padding: 5px;
 }
 #div-for-email {
@@ -43,9 +48,9 @@ body {
   width: 100%;
   padding: 5px;
   margin-bottom: 20px;
-  /* background-color: lightgray; */
   border-radius: 0 0 5px 5px;
   text-align: center;
+  font-size: 10px;
 }
 #groups {
   width: 50%;
@@ -55,26 +60,75 @@ body {
   justify-content: center;
   align-content: flex-end;
   /* background-color: blue; */
-  padding: 29px 0px 0px;
+  padding: 15px 0px 15px;
   margin-top: 5px;
 }
 
+#div-github,
 #div-linkedin,
 #div-fb {
-  width: 10%;
+  width: 25%;
   padding: 2px;
-  margin: 10px;
+  margin: 5px;
+  text-align: center;
+  color: gray;
   /* background-color: greenyellow; */
 }
 
+#img-github,
 #img-linkedin,
 #img-fb {
   width: 100%;
+  font-size: 20px;
   cursor: pointer;
 }
 
+#img-github:hover,
 #img-fb:hover,
 #img-linkedin:hover {
+  color: gray;
   opacity: 0.5;
   transform: scale(1.1);
+}
+@media only screen and (min-width: 992px) {
+  #div-for-main-contact {
+    width: 50%;
+    margin: auto;
+    margin-top: 50px;
+    padding: 5px;
+  }
+  #div-for-contact-me {
+    font-size: 22px;
+    padding: 5px;
+  }
+  #email {
+    font-size: 20px;
+    padding: 5px;
+  }
+
+  #social-media-text {
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 20px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    font-size: 15px;
+  }
+  #div-github,
+  #div-linkedin,
+  #div-fb {
+    width: 10%;
+    padding: 2px;
+    margin: 5px;
+    text-align: center;
+    /* background-color: greenyellow; */
+  }
+
+  #img-github,
+  #img-linkedin,
+  #img-fb {
+    width: 100%;
+    font-size: 30px;
+    cursor: pointer;
+  }
 }

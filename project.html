@@ -5,43 +5,130 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/project.css" />
+    <link rel="stylesheet" type="text/css" href="./css/projectphone.css" />
     <link rel="stylesheet" type="text/css" href="./css/upnav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/84e62979dc.js"
+      crossorigin="anonymous"
+    ></script>
     <title>myprojects</title>
   </head>
   <body>
     <nav id="up-nav">
-      <span class="span-top-nav"><a href="index.html">Home</a></span>
-      <span class="span-top-nav"><a href="about.html">About</a></span>
-      <!-- <span class="span-top-nav"><a href="project.html">Project</a></span> -->
-      <span class="span-top-nav"> <a href="contact.html">Contact</a></span>
+      <!-- hidden @ pc -->
+      <div id="menu">
+        <div id="hamburger-container">
+          <i class="fas fa-bars" id="hamburger-icon"></i>
+        </div>
+        <!-- hidden @phone -->
+        <div id="span-container">
+          <span id="home1"><a href="index.html">Home</a></span>
+          <span id="about1"><a href="about.html">About</a></span>
+          <span id="project1"><a href="project.html">Project</a></span>
+          <span id="contact1"><a href="contact.html">Contact</a></span>
+        </div>
+      </div>
     </nav>
+    <!-- hidden at pc -->
+    <div id="div-for-menu-container" class="animate__animated animate__faster">
+      <div id="div-for-menu">
+        <strong id="strong-name">Alnadzmer Mabbol Jamil</strong>
+        <div class="div-for-location">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <span id="taguig">Pinagsama, Taguig City</span>
+        </div>
+        <div id="span-container-life-side">
+          <span id="home" class="span-x"><a href="index.html">Home</a></span>
+          <span id="about" class="span-x"><a href="about.html">About</a></span>
+          <span id="project" class="span-x"
+            ><a href="project.html">Project</a></span
+          >
+          <span id="contact" class="span-x"
+            ><a href="contact.html">Contact</a></span
+          >
+        </div>
+      </div>
+    </div>
     <div id="div-for-main-container-project">
       <div id="project-container">
-        <div id="work-text"><strong>Work</strong></div>
-        <div id="project-text"><strong>Projects</strong></div>
+        <div id="project-text">
+          <div
+            class="animate__animated animate__fadeInDown animate__delay-1s animate__faster"
+          >
+            P
+          </div>
+          <div
+            class="animate__animated animate__fadeInUp animate__delay-1s animate__faster"
+          >
+            r
+          </div>
+          <div
+            class="animate__animated animate__fadeInDown animate__delay-1s animate__faster"
+          >
+            o
+          </div>
+          <div
+            class="animate__animated animate__fadeInUp animate__delay-1s animate__faster"
+          >
+            j
+          </div>
+          <div
+            class="animate__animated animate__fadeInDown animate__delay-1s animate__faster"
+          >
+            e
+          </div>
+          <div
+            class="animate__animated animate__fadeInUp animate__delay-1s animate__faster"
+          >
+            c
+          </div>
+          <div
+            class="animate__animated animate__fadeInDown animate__delay-1s animate__faster"
+          >
+            t
+          </div>
+          <div
+            class="animate__animated animate__fadeInUp animate__delay-1s animate__faster"
+          >
+            s
+          </div>
+        </div>
 
         <div id="div-for-project">
           <div id="buddy-shop">
-            <img
-              src="https://th.bing.com/th/id/OIP.4i90o6vBay4qB9vy_d6UPQHaHa?pid=ImgDet&rs=1"
-            />
+            <a
+              class="a-for-img-project"
+              href="https://jamil-buddyshop.herokuapp.com/allitems
+"
+              ><img
+                id="buddy-shop-img"
+                src="https://th.bing.com/th/id/OIP.YkaHgf9tqCoyzRXm03zKrAHaGL?pid=ImgDet&w=800&h=668&rs=1"
+            /></a>
+
             <div id="div-for-buddy-shop-text">
-              <span id="buddy-shop-text">Buddy Shop</span>
-              <span class="span-for-img">
-                <img
-                  id="arrow"
-                  onClick="{this.buddyShopArrow}"
-                  class="img"
-                  src="https://www.transparentpng.com/thumb/arrow/blue-down-arrow-icon-png-1.png"
-                  alt="arrowdown"
-                />
-              </span>
+              <a
+                id="buddy-shop-text"
+                class="anchor"
+                href="https://jamil-buddyshop.herokuapp.com/allitems
+"
+                >Buddy Shop</a
+              >
+
+              <div class="project-description">MERN</div>
             </div>
           </div>
           <div id="blackjack">
-            <img
-              src="https://cdn2.iconfinder.com/data/icons/playing-poker-cards-2/512/25-512.png"
-            />
+            <a
+              class="a-for-img-project"
+              href="https://alnadzmerjamil.github.io/Blackjack-In-JS/"
+              ><img
+                src="https://trustedonlinecasino.files.wordpress.com/2015/07/blackjack.jpg"
+            /></a>
+
             <div id="div-for-buddy-shop-text">
               <a
                 id="buddy-shop-text"
@@ -49,21 +136,19 @@
                 href="https://alnadzmerjamil.github.io/Blackjack-In-JS/"
                 >Blackjack-in-js</a
               >
-              <span class="span-for-img">
-                <img
-                  onClick="{this.blackjackArrow}"
-                  class="img"
-                  src="https://www.transparentpng.com/thumb/arrow/blue-down-arrow-icon-png-1.png"
-                  alt="arrowdown"
-                />
-              </span>
+              <span class="project-description">JAVASCRIPT</span>
             </div>
           </div>
 
           <div id="buddyz-travel">
-            <img
-              src="https://th.bing.com/th/id/R58ebf9f72c113efc4544b4a8f38b709b?rik=W1HXBMWLNQEmLg&riu=http%3a%2f%2fwww.gannett-cdn.com%2f-mm-%2f0720929aa73a2070c0fafb1282cffb01e263281f%2fc%3d237-0-2048-1363%26r%3dx513%26c%3d680x510%2flocal%2f-%2fmedia%2fUSATODAY%2fUSATODAY%2f2013%2f09%2f11%2f1378918772000-PGmarina2.jpg&ehk=61M3o5W5WG%2bak1Dxl7WEX%2ftiCJz03NB2ALtZF%2b17LTY%3d&risl=&pid=ImgRaw"
-            />
+            <a
+              class="a-for-img-project"
+              href="https://alnadzmerjamil.github.io/buddyz-travel/"
+            >
+              <img
+                src="https://www.interbel.es/wp-content/uploads/2014/11/offer-online-tickets-for-your-shows-in-india-using-online-event-ticketing-solution.jpg"
+            /></a>
+
             <div id="div-for-buddy-shop-text">
               <a
                 id="buddy-shop-text"
@@ -71,66 +156,78 @@
                 href="https://alnadzmerjamil.github.io/buddyz-travel/"
                 >Buddyz Travel</a
               >
-              <span class="span-for-img">
-                <img
-                  onClick="{this.buddyzTravelArrow}"
-                  class="img"
-                  src="https://www.transparentpng.com/thumb/arrow/blue-down-arrow-icon-png-1.png"
-                  alt="arrowdown"
-                />
-              </span>
+              <span class="project-description">HTML AND CSS</span>
             </div>
           </div>
         </div>
         <!-- homeworks -->
-        <div id="homework-text"><strong>Homeworks</strong></div>
+        <div
+          id="homework-text"
+          class="animate__animated animate__fadeInUp animate__delay-1s animate__faster"
+        >
+          <div>Homeworks</div>
+        </div>
         <div id="div-for-homeworks">
           <div class="div-per-homework" id="resto">
-            <img
-              id="img-homework"
-              src="https://th.bing.com/th/id/Rd13825c2807a2124343b44d8891d1511?rik=dLZ0kSoxIn%2fctA&riu=http%3a%2f%2fwww-personal.umich.edu%2f~ashleyac%2fimg%2fjavascript.png&ehk=QaUtIZ%2funndXnyPX%2bXHTGaQtHCLja7NrCJ2Xi8l%2bdlw%3d&risl=&pid=ImgRaw"
-              alt=""
-            />
-            <div class="homework-title-text">Resto App</div>
+            <a
+              class="a-for-img"
+              href="https://alnadzmerjamil.github.io/Resto-App-in-React-redux/"
+            >
+              <img
+                class="img-hw"
+                id="img-homework"
+                src="https://th.bing.com/th/id/R9b4e7490de7740fb8707d5d5e6e0f937?rik=uQFUJQt%2fLVzxgw&riu=http%3a%2f%2fwww.webpioneer.co.uk%2fblog%2fwp-content%2fuploads%2f2014%2f05%2frestaurant_app.jpg&ehk=Be4ZwdyjkP0m5R7DC%2fvBQMjBk2bWEy7WvUuf19fBOxE%3d&risl=&pid=ImgRaw"
+                alt=""
+            /></a>
+
+            <div class="div-for-hw-description">
+              <a
+                class="homework-title-text anchor"
+                href="https://alnadzmerjamil.github.io/Resto-App-in-React-redux/"
+                >Resto App</a
+              >
+              <span class="hw-description">REACT REDUX</span>
+            </div>
           </div>
           <div class="div-per-homework" id="todo">
-            <img
-              class="img-hw"
-              src="https://th.bing.com/th/id/R9bb7d95b285b996ed7fbc8da00bc0767?rik=dPCfcjY4V6KPVw&riu=http%3a%2f%2ffreevector.co%2fwp-content%2fuploads%2f2010%2f08%2f78934-task-list.png&ehk=rEZ39hnSFr7sik9lpUH0dt0pzwtSQva%2bgrmd2%2bdSpf0%3d&risl=&pid=ImgRaw"
-              alt=" To-do-app"
-            />
-            <!-- <div class="homework-title-text">To-Do App</div> -->
             <a
-              class="homework-title-text anchor"
-              href="https://alnadzmerjamil.github.io/react-to-do-app/"
-              >To-Do App</a
-            >
+              class="a-for-img"
+              href="https://alnadzmerjamil.github.io/To-Do-App-in-js/"
+              ><img
+                class="img-hw"
+                src="https://cdn.dribbble.com/users/33001/screenshots/2727448/drib_check.png?compress=1&resize=400x300"
+                alt=" To-do-app"
+            /></a>
+
+            <div class="div-for-hw-description">
+              <a
+                class="homework-title-text anchor"
+                href="https://alnadzmerjamil.github.io/To-Do-App-in-js/"
+                >To-Do App</a
+              >
+              <span class="hw-description">JAVASCRIPT</span>
+            </div>
           </div>
-          <div class="div-per-homework">
+          <!-- <div class="div-per-homework">
             <img
               class="img-hw"
               src="https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/167_Html5_logo_logos-512.png"
               alt=""
             />
             <div class="homework-title-text">Pokedex</div>
-          </div>
-          <div class="div-per-homework">
+          </div> -->
+          <!-- <div class="div-per-homework">
             <img
               class="img-hw"
               src="https://maxcdn.icons8.com/Share/icon/Logos/css31600.png"
               alt=""
             />
             <div class="homework-title-text">RPS</div>
-          </div>
+          </div> -->
         </div>
       </div>
     </div>
-    <div id="description-container">
-      <div id="div-for-description">
-        <div id="div-btnX"><button id="btnX">X</button></div>
-        <p>Project description is not available</p>
-      </div>
-    </div>
+
     <script src="project.js"></script>
   </body>
 </html>

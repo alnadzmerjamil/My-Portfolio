@@ -5,6 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" type="text/css" href="./css/home.css" />
+    <link rel="stylesheet" type="text/css" href="./css/upnav.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
     <script
       src="https://kit.fontawesome.com/84e62979dc.js"
       crossorigin="anonymous"
@@ -12,52 +17,75 @@
     <title>myportfolio</title>
   </head>
   <body>
-    <div id="div-for-mini-container">
-      <div class="mini-container">
-        <nav id="main-nav">
-          <div id="hamburger">
-            <i class="fas fa-bars" id="hamburger-icon"></i>
-          </div>
-          <div id="div-for-menu-container">
-            <div id="div-for-menu">
-              <span id="home"><a href="index.html">Home</a></span>
-              <span id="about"><a href="about.html">About</a></span>
-              <span id="project"><a href="project.html">Project</a></span>
-              <span id="contact"><a href="contact.html">Contact</a></span>
-            </div>
-            <div></div>
-          </div>
-        </nav>
-        <div class="div-for-name">
-          <div class="div-for-img">
-            <img
-              id="img-head"
-              src="
-              https://images.vexels.com/media/users/3/137047/isolated/preview/5831a17a290077c646a48c4db78a81bb-user-profile-blue-icon-by-vexels.png
-              "
-            />
-          </div>
-          <strong id="strong-name">Alnadzmer Jamil</strong>
-          <div class="div-for-location">
-            <i class="fas fa-map-marker-alt icon"></i>
-            <span>Taguig City</span>
-          </div>
-          <div class="div-for-github">
-            <i class="fab fa-github-square icon"></i>
-
-            <a class="anchor" href="https://github.com/alnadzmerjamil"
-              ><span>Github</span></a
-            >
-          </div>
+    <nav id="up-nav">
+      <!-- hidden @ pc -->
+      <div id="menu">
+        <div id="hamburger-container">
+          <i class="fas fa-bars" id="hamburger-icon"></i>
         </div>
-        <div class="div-for-bottom-style">
-          <div class="vertical"></div>
-          <div class="horizontal"></div>
+        <!-- hidden @phone -->
+        <div id="span-container">
+          <span id="home1"><a href="index.html">Home</a></span>
+          <span id="about1"><a href="about.html">About</a></span>
+          <span id="project1"><a href="project.html">Project</a></span>
+          <span id="contact1"><a href="contact.html">Contact</a></span>
+        </div>
+      </div>
+    </nav>
+    <!-- hidden at pc -->
+    <div id="div-for-menu-container" class="animate__animated animate__faster">
+      <div id="div-for-menu">
+        <strong id="strong-name">Alnadzmer Mabbol Jamil</strong>
+        <div class="div-for-location">
+          <i class="fas fa-map-marker-alt icon"></i>
+          <span id="taguig">Pinagsama, Taguig City</span>
+        </div>
+        <!-- <div class="div-for-location">
+          <a
+            class="fas fa-download icon"
+            href="resume/Alnadzmer M Jamil.pdf"
+            download="pdf"
+            >Download</a
+          >
+          <a href="resume/Alnadzmer M Jamil.pdf" target="_blank">Resume</a>
+        </div> -->
+        <div id="span-container-life-side">
+          <span id="home" class="span-x"><a href="index.html">Home</a></span>
+          <span id="about" class="span-x"><a href="about.html">About</a></span>
+          <span id="project" class="span-x"
+            ><a href="project.html">Project</a></span
+          >
+          <span id="contact" class="span-x"
+            ><a href="contact.html">Contact</a></span
+          >
         </div>
       </div>
     </div>
+    <!--  -->
 
-    <hr />
+    <!-- <div id="hello-world-container"> -->
+    <div id="center-container">
+      <!-- <div id="div-for-slash" class="/"></div> -->
+      <div class="text-container hello">
+        <span
+          id="hello"
+          class="animate__animated animate__swing animate__delay-1s"
+        >
+          hello
+        </span>
+      </div>
+      <!--  -->
+      <div class="text-container world">
+        <span
+          id="world"
+          class="animate__animated animate__swing animate__delay-2s"
+        >
+          World.
+        </span>
+      </div>
+    </div>
+    <!-- </div> -->
+
     <script src="script.js"></script>
   </body>
 </html>

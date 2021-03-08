@@ -1,4 +1,3 @@
-// @project.html
 //@index.html
 let hamburgerIcon = document.querySelector('#hamburger-icon');
 let divMenu = document.querySelector('#div-for-menu-container');
