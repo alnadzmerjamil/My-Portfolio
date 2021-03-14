@@ -5,83 +5,88 @@
   font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
-@media only screen and (max-width: 778px) {
-  #div-for-main-contact {
-    width: 80%;
-    margin: auto;
-    margin-top: 40px;
-    padding: 5px;
-    /* background: rgb(243, 61, 61); */
-  }
-  #main-contact {
-    width: 100%;
-    background: whitesmoke;
-  }
-  #div-for-contact-me {
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-    background-color: lightgray;
-  }
-  #div-for-contact-me {
-    font-size: 18px;
-    padding: 5px;
-  }
-  #email {
-    font-size: 16px;
-    padding: 5px;
-  }
-  #div-for-email {
-    width: 100%;
-    text-align: center;
-    padding: 30px 0px;
-    /* background-color: white; */
-  }
-  #social-media-text {
-    width: 100%;
-    padding: 5px;
-    margin-bottom: 10px;
-    border-radius: 0 0 5px 5px;
-    text-align: center;
-    font-size: 13px;
-  }
-  #groups {
-    width: 50%;
-    margin: auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    align-content: flex-end;
-    padding: 15px 0px 15px;
-    margin-top: 5px;
-    /* background-color: blue; */
-  }
-
-  #div-github,
-  #div-linkedin,
-  #div-fb {
-    width: 33.3%;
-    text-align: center;
-    color: gray;
-    /* background-color: greenyellow; */
-  }
-
-  #img-github,
-  #img-linkedin,
-  #img-fb {
-    width: 100%;
-    font-size: 30px;
-    cursor: pointer;
-  }
-
-  #img-github:hover,
-  #img-fb:hover,
-  #img-linkedin:hover {
-    color: gray;
-    opacity: 0.5;
-    transform: scale(1.1);
-  }
+/* @media only screen and (max-width: 778px) { */
+#div-for-main-contact {
+  width: 80%;
+  margin: auto;
+  margin-top: 40px;
+  padding: 5px;
+  /* background: rgb(243, 61, 61); */
 }
+#main-contact {
+  width: 100%;
+  background: whitesmoke;
+}
+#div-for-contact-me {
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+  background-color: lightgray;
+}
+#div-for-contact-me {
+  font-size: 18px;
+  padding: 5px;
+}
+#email {
+  font-size: 16px;
+  padding: 5px;
+}
+#div-for-email {
+  width: 100%;
+  text-align: center;
+  padding: 30px 0px;
+  /* background-color: white; */
+}
+#social-media-text {
+  width: 100%;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 0 0 5px 5px;
+  text-align: center;
+  font-size: 13px;
+  /* background-color: green; */
+}
+.div-for-resume {
+  display: none;
+}
+
+#groups {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: flex-end;
+  padding: 15px 0px 15px;
+  margin-top: 5px;
+  /* background-color: blue; */
+}
+
+#div-github,
+#div-linkedin,
+#div-fb {
+  width: 33.3%;
+  text-align: center;
+  color: gray;
+  /* background-color: greenyellow; */
+}
+
+#img-github,
+#img-linkedin,
+#img-fb {
+  width: 100%;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+#img-github:hover,
+#img-fb:hover,
+#img-linkedin:hover {
+  color: gray;
+  opacity: 0.5;
+  transform: scale(1.1);
+}
+
 @media only screen and (min-width: 992px) {
   #div-for-main-contact {
     width: 50%;
@@ -106,12 +111,26 @@
     text-align: center;
     font-size: 15px;
   }
+  .div-for-resume {
+    width: 100%;
+    display: block;
+    padding: 5px;
+    margin-bottom: 10px;
+    border-radius: 0 0 5px 5px;
+    text-align: center;
+    /* background-color: green; */
+  }
+  .resume-text {
+    font-size: 15px;
+    color: black;
+  }
+  #groups {
+    width: 20%;
+  }
   #div-github,
   #div-linkedin,
   #div-fb {
-    width: 10%;
     padding: 2px;
-    margin: 5px;
     text-align: center;
     /* background-color: greenyellow; */
   }

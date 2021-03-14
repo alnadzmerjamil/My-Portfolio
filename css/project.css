@@ -44,9 +44,6 @@
     /* background-color: rgb(180, 48, 48); */
   }
 
-  #div-for-project img:hover {
-    transform: skewY(-1deg);
-  }
   #buddy-shop,
   #blackjack,
   #buddyz-travel {
@@ -82,7 +79,9 @@
     border: 5px solid lightgray;
     background-color: white;
   }
-
+  #div-for-project img:hover {
+    box-shadow: 0 1px 10px gray inset;
+  }
   #div-for-buddy-shop-text {
     width: 50%;
     display: flex;
@@ -146,13 +145,13 @@
     width: 50%;
     height: 150px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 20px;
     margin-right: 20px;
     border: 5px solid lightgray;
     background-color: white;
   }
-  #div-for-homeworks img:hover {
-    transform: skewY(-1deg);
+  .img-hw:hover {
+    box-shadow: 0 1px 10px gray inset;
   }
   .div-for-hw-description {
     width: 50%;
