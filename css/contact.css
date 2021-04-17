@@ -15,13 +15,13 @@
 }
 #main-contact {
   width: 100%;
-  background: whitesmoke;
+  background-color: #f8e8eb;
 }
 #div-for-contact-me {
   width: 100%;
   text-align: center;
   padding: 10px;
-  background-color: lightgray;
+  background-color: #fae0e4;
 }
 #div-for-contact-me {
   font-size: 18px;

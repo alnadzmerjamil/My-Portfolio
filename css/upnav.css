@@ -6,11 +6,11 @@
   z-index: 20;
   text-align: right;
   box-shadow: 0 1px 2px lightgray;
-  background: whitesmoke;
+  background: white;
 }
 a {
   text-decoration: none;
-  color: gray;
+  color: black;
 }
 .resume-text {
   color: black;
@@ -35,7 +35,7 @@ a {
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 5px;
-  color: gray;
+  color: black;
 }
 #div-for-portfolio {
   width: 50%;
@@ -47,7 +47,7 @@ a {
   font-weight: bolder;
   font-size: 20px;
   letter-spacing: -1px;
-  color: gray;
+  color: black;
 }
 #span-container {
   padding: 5px;
@@ -64,8 +64,6 @@ a {
   display: inline-block;
   text-transform: uppercase;
   cursor: pointer;
-  /* border-radius: 5px;
-  border: 1px solid gray; */
   color: gray;
 }
 #hamburger span:hover {
@@ -79,11 +77,10 @@ a {
   min-height: 100vh;
   position: absolute;
   left: 0;
-  /* top: 60px; */
   z-index: 10;
-  padding: 10px;
+  padding: 10px 10px 10px 0;
   visibility: hidden;
-  background-color: lightgray;
+  background-color: #fae0e4;
 }
 #div-for-menu {
   width: 100%;
@@ -95,19 +92,23 @@ a {
 }
 #strong-name {
   width: 100%;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 15px;
   margin-bottom: 5px;
-  padding: 5px;
-  background-color: whitesmoke;
-  border-bottom: 1px solid whitesmoke;
+  padding: 5px 5px 5px 15px;
+  color: black;
+  /* background-color: whitesmoke; */
+  /* border-bottom: 1px solid whitesmoke; */
 }
 .div-for-location {
   width: 100%;
-  font-size: 11px;
-  padding: 5px;
-  margin-bottom: 5px;
-  background-color: whitesmoke;
+  font-size: 13px;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 0 30px 30px 0;
+  background-color: #f8e8eb;
+}
+.div-for-location:hover {
+  background-color: #ecbdc6;
 }
 
 #span-container-life-side {
@@ -115,10 +116,10 @@ a {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center;
-  padding: 5px;
+  align-content: flex-start;
+  padding: 2.5px 5px 2.5px 15px;
   margin-top: 20px;
-  border: 1px solid gray;
+  /* border: 1px solid gray; */
   /* background-color: violet; */
 }
 #home,
@@ -129,13 +130,130 @@ a {
   text-align: center;
   font-size: 11px;
   text-transform: uppercase;
-  margin-bottom: 5px;
   padding: 10px 0px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /* border: 1px solid gray; */
-  background-color: whitesmoke;
+  border-radius: 10px;
+  margin: 5px 0;
+  background-color: #f8e8eb;
 }
+#home:hover,
+#about:hover,
+#project:hover,
+#contact:hover {
+  background-color: #ecbdc6;
+}
+
+/* tablet layout */
 @media only screen and (min-width: 768px) and (max-width: 991px) {
+  #up-nav {
+    width: 100%;
+    padding: 10px;
+    position: sticky;
+    top: 0px;
+    z-index: 20;
+    text-align: right;
+    box-shadow: 0 1px 2px lightgray;
+    background: whitesmoke;
+  }
+
+  #menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5px;
+    text-align: right;
+    background-color: blueviolet;
+  }
+  #hamburger-container {
+    width: 50%;
+    text-align: left;
+    /* background-color: thistle; */
+  }
+  #hamburger-icon {
+    font-size: 35px;
+    cursor: pointer;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: gray;
+  }
+  #div-for-portfolio {
+    width: 50%;
+    padding: 10px 15px 10px 0px;
+    background-color: brown;
+  }
+  #portfolio-text {
+    font-family: monospace;
+    font-weight: bolder;
+    font-size: 35px;
+    letter-spacing: -1px;
+    color: gray;
+  }
+
+  /* menu on phone */
+  #div-for-menu-container {
+    /* display: none; */
+    width: 45%;
+    min-height: 100vh;
+    position: absolute;
+    left: 0;
+    /* top: 60px; */
+    z-index: 10;
+    padding: 10px;
+    visibility: hidden;
+    background-color: lightgray;
+  }
+  #div-for-menu {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    /* background-color: wheat; */
+  }
+  #strong-name {
+    width: 100%;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 5px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border-bottom: 1px solid whitesmoke;
+  }
+  .div-for-location {
+    width: 100%;
+    font-size: 14px;
+    padding: 5px;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+  }
+
+  #span-container-life-side {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin-top: 20px;
+    border: 1px solid gray;
+    background-color: violet;
+  }
+  #home,
+  #about,
+  #project,
+  #contact {
+    width: 47%;
+    text-align: center;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 5px;
+    padding: 10px 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* border: 1px solid gray; */
+    background-color: whitesmoke;
+  }
 }
 @media only screen and (min-width: 992px) {
   #div-for-portfolio {
