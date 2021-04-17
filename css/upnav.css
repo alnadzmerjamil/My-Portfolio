@@ -6,14 +6,14 @@
   z-index: 20;
   text-align: right;
   box-shadow: 0 1px 2px lightgray;
-  background: white;
+  background: #ecbdc6;
 }
 a {
   text-decoration: none;
-  color: black;
+  color: #db94a1;
 }
 .resume-text {
-  color: black;
+  color: #db94a1;
 }
 #menu {
   width: 100%;
@@ -31,11 +31,11 @@ a {
   /* background-color: thistle; */
 }
 #hamburger-icon {
-  font-size: 20px;
+  font-size: 16px;
   cursor: pointer;
   padding: 5px 10px;
   border-radius: 5px;
-  color: black;
+  color: whitesmoke;
 }
 #div-for-portfolio {
   width: 50%;
@@ -45,9 +45,9 @@ a {
 #portfolio-text {
   font-family: monospace;
   font-weight: bolder;
-  font-size: 20px;
+  font-size: 16px;
   letter-spacing: -1px;
-  color: black;
+  color: whitesmoke;
 }
 #span-container {
   padding: 5px;
@@ -64,7 +64,6 @@ a {
   display: inline-block;
   text-transform: uppercase;
   cursor: pointer;
-  color: gray;
 }
 #hamburger span:hover {
   box-shadow: 0 1px 5px gray inset;
@@ -92,19 +91,20 @@ a {
 }
 #strong-name {
   width: 100%;
-  font-size: 15px;
+  font-size: 13px;
   margin-bottom: 5px;
   padding: 5px 5px 5px 15px;
-  color: black;
+  color: whitesmoke;
   /* background-color: whitesmoke; */
   /* border-bottom: 1px solid whitesmoke; */
 }
 .div-for-location {
   width: 100%;
-  font-size: 13px;
+  font-size: 12px;
   padding: 15px;
   margin-bottom: 10px;
   border-radius: 0 30px 30px 0;
+  color: #db94a1;
   background-color: #f8e8eb;
 }
 .div-for-location:hover {
