@@ -4,8 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" type="text/css" href="./css/home.css" />
-    <link rel="stylesheet" type="text/css" href="./css/upnav.css" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+		<link rel="stylesheet" type="text/css" href="project.css" />
+		<link rel="stylesheet" type="text/css" href="contact.css" />
+    <link rel="stylesheet" type="text/css" href="nav.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
@@ -14,81 +17,349 @@
       src="https://kit.fontawesome.com/84e62979dc.js"
       crossorigin="anonymous"
     ></script>
-    <title>myportfolio</title>
+    <title>Document</title>
   </head>
   <body>
-    <nav id="up-nav">
-      <!-- hidden @ pc -->
-      <div id="menu">
-        <div id="hamburger-container">
-          <i class="fas fa-bars" id="hamburger-icon"></i>
-        </div>
-        <div id="div-for-portfolio">
-          <p id="portfolio-text">MY Portfolio</p>
-        </div>
-        <!-- hidden @phone -->
-        <div id="span-container">
-          <span id="home1"><a href="index.html">Home</a></span>
-          <span id="about1"><a href="about.html">About</a></span>
-          <span id="project1"><a href="project.html">Project</a></span>
-          <span id="contact1"><a href="contact.html">Contact</a></span>
-        </div>
-      </div>
-    </nav>
-    <!-- hidden at pc -->
-    <div id="div-for-menu-container" class="animate__animated animate__faster">
-      <div id="div-for-menu">
-        <strong id="strong-name">Alnadzmer Mabbol Jamil</strong>
-        <div class="div-for-location">
-          <i class="fas fa-map-marker-alt icon"></i>
-          <span id="taguig">Pinagsama, Taguig City</span>
-        </div>
-        <div class="div-for-location">
-          <a
-            class="fas fa-download icon resume-text"
-            href="resume/Alnadzmer M Jamil.pdf"
-            target="_blank"
-            download="Alnadzmer M Jamil"
-          ></a>
-          <a class="resume-text">Resume</a>
-        </div>
-        <div id="span-container-life-side">
-          <span id="home" class="span-x"><a href="index.html">Home</a></span>
-          <span id="about" class="span-x"><a href="about.html">About</a></span>
-          <span id="project" class="span-x"
-            ><a href="project.html">Project</a></span
-          >
-          <span id="contact" class="span-x"
-            ><a href="contact.html">Contact</a></span
-          >
-        </div>
-      </div>
-    </div>
-    <!--  -->
-
-    <!-- <div id="hello-world-container"> -->
     <div id="center-container">
-      <!-- <div id="div-for-slash" class="/"></div> -->
-      <div class="text-container hello">
-        <span
-          id="hello"
-          class="animate__animated animate__swing animate__delay-1s"
-        >
-          hello
-        </span>
+			<!-- pc -->
+      <div class="main-navbar-pc-phone">
+				<div class="div-hamburger">
+					<i class="fas fa-bars" id="fa-bars"></i>
+				</div>
+				<div class="div-menu-container-pc animate__animated animate__fadeInUp animate__delay-3s animate__fast">
+					<div class="menu home-menu">
+						<a href="" class="a">HOME</a>
+					</div>
+					<div class="menu about-menu">
+						<a href="#about" class="a">ABOUT</a>
+					</div>
+					<div class="menu project-menu">
+						<a href="#project" class="a">PROJECT</a>
+					</div>
+					<div class="menu contact-menu">
+						<a href="#contact" class="a">CONTACT</a>
+					</div>
+				</div>
+			</div>
+
+			<!-- phone -->
+			<div class="navbar-phone" id="nav-phone">
+				
+				<div class="div-menu-container-phone">
+
+					<div class="div-arrow-left">
+						<i class="fas fa-arrow-left" id="arrow-left"></i> <span class="span-my-portfolio-text">  MY Portfolio</span>
+					</div>
+					<div class="div-my-name-nav">
+						<p class="p-my-name">Alnadzmer Mabbol Jamil</p>
+					</div>
+					<div class="menu home-menu">
+						<i class="fas fa-home icon-side-nav"></i> <a href="" class="a a-phone">HOME</a>
+					</div>
+					<div class="menu about-menu">
+						<i class="fas fa-info-circle icon-side-nav"></i> <a href="#about" class="a a-phone">ABOUT</a>
+					</div>
+					<div class="menu project-menu">
+						<i class="fas fa-tasks icon-side-nav"></i> <a href="#project" class="a a-phone">PROJECT</a>
+					</div>
+					<div class="menu contact-menu">
+						<i class="fas fa-phone-alt icon-side-nav"></i> <a href="#contact" class="a a-phone">CONTACT</a>
+					</div>
+				</div>
+			</div>
+			<!-- landing page -->
+      <div class="div-my-name">
+        <p class="p-name animate__animated animate__fadeInDown animate__delay-1s animate__fast">ALNADZMER JAMIL</p>
       </div>
-      <!--  -->
-      <div class="text-container world">
-        <span
-          id="world"
-          class="animate__animated animate__swing animate__delay-2s"
+      <div class="div-title">
+        <p class="p-title animate__animated animate__fadeInUp animate__delay-2s animate__slow">Full Stack Web Developer</p>
+      </div>
+      <div class="div-qoute animate__animated animate__zoomInDown animate__delay-2s animate__slow">
+        <a href="#div-for-contact" class="p-qoute ">GET IN TOUCH</a>
+      </div>
+			<div class="div-arrow-down animate__animated animate__fadeInUp animate__delay-2s animate__slow">
+				<i class="fas fa-chevron-down" id="arrow-down" ></i>
+			</div>
+			
+    </div>
+
+    <!--about   -->
+		<div class="div-for-about" id="about">
+      <div class="div-about"><p class="p-about">ABOUT</p>
+			</div>
+      <div class="about-container">
+
+				<!-- exp and name -->
+        <div
+          class="div-experience"
+          data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="1000"
         >
-          World.
-        </span>
+          <div class="div-about-me">
+            <p class="p-about-me">Hi, MY NAME IS ALNADZMER MABBOL JAMIL</p>
+            <p class="p-message">
+              I am a Full Stack Web Developer, I am passionate about creating
+              beautiful and user friendly web application. I care too much about
+              the project but I make it a habbit to finished my work ahead of time.
+            </p>
+          </div>
+          <div class="div-exp">
+            <p class="p-exp">EXPERIENCE</p>
+            <div class="div-list-exp">
+              <ul>
+                <li>Personal projects</li>
+                <li>Six months in a Bootcamp</li>
+                <li>Six months intensive coding</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+				<!-- line vertical -->
+        <div class="vertical"></div>
+
+				<!-- skills  -->
+        <div
+          class="div-for-skills"
+          data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000"
+        >
+          <p class="p-skills">SKILSS</p>
+          <!-- front end -->
+          <div class="div-front-end">
+            <p class="p-front-end-text">Front-End</p>
+            <div class="div-html">
+              <div class="span-html-text course">HTML</div>
+              <div class="span-container">
+                <div class="span-content-html content content-html">90%</div>
+              </div>
+            </div>
+            <!-- css -->
+            <div class="div-css">
+              <div class="span-css-text course">CSS</div>
+              <div class="span-container">
+                <div class="span-content-css content content-css">85%</div>
+              </div>
+            </div>
+            <!-- js -->
+            <div class="div-js">
+              <div class="span-js-text course">Javascript</div>
+              <div class="span-container">
+                <div class="span-content-js content content-js">85%</div>
+              </div>
+            </div>
+            <!-- react -->
+            <div class="div-react">
+              <div class="span-react-text course">React.js</div>
+              <div class="span-container">
+                <div class="span-content-react content content-react">82%</div>
+              </div>
+            </div>
+          </div>
+          <!-- back end -->
+          <div class="div-front-end">
+            <p class="p-front-end-text">Back-End</p>
+            <div class="div-html">
+              <div class="span-html-text course">Express.js</div>
+              <div class="span-container">
+                <div class="span-content-html content content-express">82%</div>
+              </div>
+            </div>
+            <!-- css -->
+            <div class="div-css">
+              <div class="span-css-text course">PHP</div>
+              <div class="span-container">
+                <div class="span-content-css content content-php">80%</div>
+              </div>
+            </div>
+            <d>
+          </ivd>
+            <!-- db -->
+          <div class="div-front-end">
+            <p class="p-front-end-text">Database</p>
+            <div class="div-html">
+              <div class="span-html-text course">mongoDB</div>
+              <div class="span-container">
+                <div class="span-content-html content content-express">82%</div>
+              </div>
+            </div>
+            <!-- css -->
+            <div class="div-css">
+              <div class="span-css-text course">mySQL</div>
+              <div class="span-container">
+                <div class="span-content-css content content-php">80%</div>
+              </div>
+            </div>
+            <d>
+          </ivd>
+     	 	</div>	
+   	 	</div>
+		</div>
+  </div>
+	</div>
+		<!-- projects -->
+		<div class="div-for-projects" id="project">
+      <div class="div-projects">
+        <p class="p-project-text">PROJECTS</p>
+				<!-- foovorite -->
+        <div class="project-container" data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="1000">
+					<a class="project1 project" >
+         	 	<img id='foovorite' class="project-content img-foovorite" src="https://www.carsigns.com/wp-content/uploads/2020/04/food-delivery.jpg" alt="">
+        	</a>
+					<div class="div-project-name" id="foovorite">
+            <div class="div-for-project-name-and-description" id="foovorite-name">
+							<p class="p-project-name">FOOVORITE</p>
+              <P class="p-description">Food Delivery App</P>
+						</div>
+          </div>
+				</div>
+        <!-- buddy shop -->
+        
+				<div class="project-container" data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="1000">
+					<a class="project1 project">
+         	 	<img class="project-content img-buddy-shop" src="https://th.bing.com/th/id/OIP.YkaHgf9tqCoyzRXm03zKrAHaGL?pid=ImgDet&w=800&h=668&rs=1" alt="">
+        	</a>
+					<div class="div-project-name" id="buddy-shop">
+            <a class="div-for-project-name-and-description" id="buddy-shop-name" href="https://jamil-buddyshop.herokuapp.com/allitems
+" >
+							<p class="p-project-name">BUDDY-SHOP</p>
+            	<P class="p-description">E-commerce App</P>
+          </a>
+          </div>
+				</div>
+				<!-- blackjack -->
+				<div class="project-container" data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000">
+					<a class="project1 project" >
+         	 	<img class="project-content img-blackjack" src="https://trustedonlinecasino.files.wordpress.com/2015/07/blackjack.jpg" alt="">
+        	</a>
+					<div class="div-project-name" id="blackjack">
+            <a class="div-for-project-name-and-description" id="blackjack-name" href="https://alnadzmerjamil.github.io/Blackjack-In-JS/">
+							<p class="p-project-name">BLACKJACK</p>
+              <P class="p-description">Simple game in JS</P>
+						</a>
+          </div>
+				</div>
+        
+				<!-- buddyz travel -->
+				<div class="project-container" data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000">
+					<a class="project1 project"  >
+         	 <img class="project-content img-buddyz-travel" src="https://www.interbel.es/wp-content/uploads/2014/11/offer-online-tickets-for-your-shows-in-india-using-online-event-ticketing-solution.jpg" alt="">
+        	</a>
+					<div class="div-project-name" id="travel">
+            <a class="div-for-project-name-and-description" id="travel-name" href="https://alnadzmerjamil.github.io/buddyz-travel/">
+							<p class="p-project-name">BUDDYZ TRAVEL</p>
+           	  <P class="p-description">Static Website</P>
+						</a>
+          </div>
+				</div>
+      </div>
+
+			<!-- homeworks -->
+			
+			 <div class="div-projects">
+        <p class="p-project-text">HOME ACTIVITIES</p>
+				<div class="project-container" data-aos="fade-right"
+          data-aos-delay="200"
+          data-aos-duration="1000">
+					<a class="project1 project" >
+         	  <img class="project-content img-foovorite" src="https://th.bing.com/th/id/R9b4e7490de7740fb8707d5d5e6e0f937?rik=uQFUJQt%2fLVzxgw&riu=http%3a%2f%2fwww.webpioneer.co.uk%2fblog%2fwp-content%2fuploads%2f2014%2f05%2frestaurant_app.jpg&ehk=Be4ZwdyjkP0m5R7DC%2fvBQMjBk2bWEy7WvUuf19fBOxE%3d&risl=&pid=ImgRaw" alt="">
+        	</a>
+					<div class="div-project-name" id="resto">
+            <a class="div-for-project-name-and-description"id="resto-name" href="https://alnadzmerjamil.github.io/To-Do-App-in-js/">
+							<p class="p-project-name">RESTO APP</p>
+           	  <P class="p-description">React redux</P>
+						</a>
+          </div>
+				</div>
+        <!-- todo -->
+				<div class="project-container" data-aos="fade-left"
+          data-aos-delay="200"
+          data-aos-duration="1000">
+					<a class="project1 project"  >
+         	  <img class="project-content img-foovorite" src="https://cdn.dribbble.com/users/33001/screenshots/2727448/drib_check.png?compress=1&resize=400x300"
+               alt="">
+        	</a>
+					<div class="div-project-name" id="todo">
+            <a class="div-for-project-name-and-description"  id="todo-name" href="https://alnadzmerjamil.github.io/To-Do-App-in-js/">
+							<p class="p-project-name">TO-DO APP</p>
+           	  <P class="p-description">Javascript</P>
+						</a>
+          </div>
+				</div>
       </div>
     </div>
-    <!-- </div> -->
-
-    <script src="script.js"></script>
+</div>
+		<!-- CONTACT -->
+		<div class="div-for-contact" id="contact">
+			<div class="div-contact">
+				<p class="p-contact-text">CONTACT</p>
+				<div class="location">
+					<i class="fas fa-map-marker-alt"> </i>
+					<!-- <span>Address:</span> -->
+					<span>Location : Pinagsama Taguig City</span>
+				</div>
+				<div class="email">
+					<i class="fas fa-envelope"> </i>
+					<!-- <span></span> -->
+					<span>Email : alnadzmerjamil@gmail.com</span>
+				</div>
+				<div class="contact">
+					<i class="fas fa-phone"> </i>
+					<span>Phone Number : 0955 583 0713</span>
+				</div>
+				<div class="resume">
+					<a href="resume/Alnadzmer M Jamil.pdf"
+            target="_blank"
+            download="Alnadzmer M Jamil" class="fas fa-download"> </a>
+					<a href="resume/Alnadzmer M Jamil.pdf"
+            target="_blank"
+            download="Alnadzmer M Jamil"> Resume</a>
+					
+				</div>
+				<!-- social media -->
+				<div id="groups">
+					<div id="div-github">
+						<a
+							href="https://github.com/alnadzmerjamil"
+							id="img-github"
+							class="fab fa-github-square animate__animated animate__pulse animate__delay-3s animate__faster"
+						></a>
+					</div>
+					<div id="div-linkedin">
+						<a
+							href="https://www.linkedin.com/in/alnadzmer-mabbol-jamil-08ba6b1b1/"
+							id="img-linkedin"
+							class="fab fa-linkedin animate__animated animate__pulse animate__delay-4s animate__faster"
+						></a>
+					</div>
+					<div id="div-fb">
+						<a
+							href="https://www.facebook.com/alnadzmer.jamil"
+							id="img-fb"
+							class="fab fa-facebook-square animate__animated animate__pulse animate__delay-5s animate__faster"
+						></a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<footer>
+				<p>MY PORTFOLIO</p>
+			</footer>
+		</div>
+		</div>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+		<script src="script.js"></script>
   </body>
 </html>

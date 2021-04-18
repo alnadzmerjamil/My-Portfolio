@@ -1,43 +1,39 @@
-//@index.html
-let hamburgerIcon = document.querySelector('#hamburger-icon');
-let divMenu = document.querySelector('#div-for-menu-container');
-divMenu.style.visibility = 'hidden';
-let flag;
-hamburgerIcon.addEventListener('click', () => {
-  if (divMenu.style.visibility === 'hidden') {
-    hamburgerIcon.classList.add('fa-times');
-    hamburgerIcon.classList.remove('fa-bars');
-    divMenu.style.visibility = 'visible';
-    divMenu.classList.add('animate__fadeInLeftBig');
-    flag = true;
-  } else if (flag) {
-    hamburgerIcon.classList.remove('fa-times');
-    hamburgerIcon.classList.add('fa-bars');
-    divMenu.classList.remove('animate__fadeInLeftBig');
-    divMenu.classList.remove('animate__faster');
-    divMenu.classList.add('animate__slow');
-    divMenu.classList.add('animate__fadeOutLeftBig');
-    flag = false;
-  } else if (!flag) {
-    hamburgerIcon.classList.add('fa-times');
-    hamburgerIcon.classList.remove('fa-bars');
-    divMenu.classList.remove('animate__fadeOutLeftBig');
-    divMenu.classList.remove('animate__slow');
-    divMenu.classList.add('animate__faster');
-    divMenu.classList.add('animate__fadeInLeftBig');
-    flag = true;
-  }
+// @nav bar
+let arrowLeft = document.getElementById('arrow-left');
+let navOnPhone = document.getElementById('nav-phone');
+arrowLeft.addEventListener('click', function () {
+  navOnPhone.style.display = 'none';
 });
 
-let spanX = document.querySelectorAll('.span-x');
-spanX.forEach((span) => {
-  span.addEventListener('click', () => {
-    hamburgerIcon.classList.remove('fa-times');
-    hamburgerIcon.classList.add('fa-bars');
-    divMenu.classList.remove('animate__fadeInLeftBig');
-    divMenu.classList.remove('animate__faster');
-    divMenu.classList.add('animate__slow');
-    divMenu.classList.add('animate__fadeOutLeftBig');
-    flag = false;
+navOnPhone.addEventListener('mouseout', function () {
+  navOnPhone.style.display = 'none';
+});
+
+let burger = document.getElementById('fa-bars');
+burger.addEventListener('click', function () {
+  navOnPhone.style.display = 'block';
+});
+
+let anchors = document.querySelectorAll('.a-phone');
+anchors.forEach((a) => {
+  a.addEventListener('click', function () {
+    navOnPhone.style.display = 'none';
+  });
+});
+// @project
+let sample = document.getElementById('sample');
+// sample.style.display = 'none';
+console.log(sample);
+let projects = document.querySelectorAll('.div-project-name');
+projects.forEach((project) => {
+  project.addEventListener('mouseover', function () {
+    let description = document.getElementById(project.id + '-' + 'name');
+    project.style.backgroundColor = 'rgba(255,255,255,0.5)';
+    description.style.display = 'block';
+  });
+  project.addEventListener('mouseout', function () {
+    let description = document.getElementById(project.id + '-' + 'name');
+    project.style.backgroundColor = 'rgba(255,255,255,0)';
+    description.style.display = 'none';
   });
 });

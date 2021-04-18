@@ -1,0 +1,719 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+#center-container {
+  width: 100%;
+  min-height: 100vh;
+  background-image: url('https://th.bing.com/th/id/OIP.rD3HKS-wifDypiIoQbkF_AHaEP?pid=ImgDet&rs=1');
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* opacity: 0.5; */
+  background-color: rgba(255, 255, 255, 0.2);
+  padding-top: 40px;
+}
+.div-my-name {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 25px 0 0px;
+  margin-top: 80px;
+  /* background-color: thistle; */
+}
+.p-name {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial, Helvetica, sans-serif;
+  letter-spacing: 0.5px;
+  color: whitesmoke;
+}
+.div-title {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  /* background-color: rgb(187, 105, 187); */
+}
+.p-title {
+  font-size: 12px;
+  font-family: cursive;
+  font-style: italic;
+  color: rgb(180, 27, 111);
+}
+.div-qoute {
+  width: 35%;
+  margin: auto;
+  margin-top: 13px;
+  text-align: center;
+  padding: 5px;
+  border: 1px solid whitesmoke;
+  /* border-right: 2px solid whitesmoke; */
+  /* background-color: rgb(187, 105, 187); */
+}
+.p-qoute {
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  color: whitesmoke;
+}
+.div-arrow-down {
+  width: 100%;
+  text-align: center;
+  position: absolute;
+  bottom: 50px;
+  /* background-color: paleturquoise; */
+}
+#arrow-down {
+  font-size: 20px;
+  color: rgb(204, 32, 126);
+}
+
+/* about */
+.div-for-about {
+  width: 100%;
+  min-height: 100vh;
+  padding: 50px 0;
+  background-color: #aab6fb;
+}
+.div-about {
+  width: 100%;
+  margin: auto;
+  text-align: center;
+  padding: 10px;
+  /* background-color: rgb(187, 105, 187); */
+}
+.p-about {
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: normal;
+  padding: 10px;
+  color: white;
+  /* background-color: thistle; */
+}
+.about-container {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  padding: 10px;
+  /* background-color: violet; */
+}
+.div-experience {
+  width: 100%;
+  /* background-color: violet; */
+}
+.div-for-skills {
+  width: 100%;
+  /* background-color: violet; */
+}
+/* .vertical {
+    width: 1px;
+    margin: 0 5px 0 5px;
+    background-color: white;
+  } */
+.div-about-me {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.p-about-me {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid white;
+  color: white;
+}
+.p-message {
+  width: 100%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 12px;
+  padding: 5px 0 5px 0;
+  color: white;
+}
+
+.div-exp {
+  width: 100%;
+  margin-bottom: 5px;
+}
+.p-exp {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid white;
+  color: white;
+}
+li {
+  color: white;
+  font-size: 12px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  list-style-position: inside;
+  list-style-type: square;
+}
+
+/* 2 */
+.div-skills {
+  width: 100%;
+  border: 1px solid white;
+}
+.p-skills {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  padding: 5px 0 5px 0;
+  border-bottom: 1px solid whitesmoke;
+  color: white;
+}
+.div-front-end {
+  width: 100%;
+  margin-top: 5px;
+  color: white;
+  /* background-color: white; */
+}
+.p-front-end-text {
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  padding: 5px 0 5px 0;
+  color: darkblue;
+}
+.div-html,
+.div-css,
+.div-js,
+.div-react {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  padding: 2px 0 2px 10px;
+  /* background-color: rgb(75, 52, 11); */
+}
+span {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.course {
+  width: 25%;
+  display: inline-block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  padding-right: 10px;
+
+  color: white;
+  /* background-color: wheat; */
+}
+.span-container {
+  width: 70%;
+  height: 12px;
+  border-radius: 0 10px 10px 0;
+  background-color: white;
+}
+.content {
+  font-size: 11px;
+  height: 12px;
+  text-align: center;
+  border-radius: 0 10px 10px 0;
+  color: white;
+  background-color: darkblue;
+}
+.content-html {
+  width: 95%;
+}
+.content-css {
+  width: 90%;
+}
+.content-js {
+  width: 90%;
+}
+.content-react {
+  width: 89%;
+}
+.content-express {
+  width: 89%;
+}
+.content-php {
+  width: 87%;
+}
+.content-mongodb {
+  width: 89%;
+}
+.content-mysql {
+  width: 87%;
+}
+
+/* tab */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .div-my-name {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 25px 0 0px;
+    margin-top: 40px;
+    /* background-color: thistle; */
+  }
+  .p-name {
+    font-size: 19px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+  }
+  .div-title {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    /* background-color: rgb(187, 105, 187); */
+  }
+  .p-title {
+    font-size: 13px;
+    font-family: cursive;
+    font-style: italic;
+    color: rgb(180, 27, 111);
+  }
+  .div-qoute {
+    width: 18%;
+    margin: auto;
+    margin-top: 14px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    /* border-right: 2px solid whitesmoke; */
+    /* background-color: rgb(187, 105, 187); */
+  }
+  .p-qoute {
+    font-size: 14px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+  }
+  .div-arrow-down {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    /* background-color: paleturquoise; */
+  }
+  #arrow-down {
+    font-size: 22px;
+    color: rgb(204, 32, 126);
+  }
+
+  /* about */
+  .div-for-about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-color: #aab6fb;
+  }
+  .div-about {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    /* background-color: rgb(187, 105, 187); */
+  }
+  .p-about {
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 10px;
+    color: white;
+    /* background-color: thistle; */
+  }
+  .about-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding: 10px;
+    /* background-color: violet; */
+  }
+  .div-experience {
+    width: 45%;
+    margin-right: 10px;
+    /* background-color: violet; */
+  }
+  .div-for-skills {
+    width: 45%;
+    margin-left: 10px;
+    /* background-color: violet; */
+  }
+
+  .div-about-me {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .p-about-me {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  .p-message {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 13px;
+    padding: 5px 0 5px 0;
+    color: white;
+  }
+
+  .div-exp {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .p-exp {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  li {
+    color: white;
+    font-size: 13px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-position: inside;
+    list-style-type: square;
+  }
+
+  /* 2 */
+  .div-skills {
+    width: 100%;
+    border: 1px solid white;
+  }
+  .p-skills {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid whitesmoke;
+    color: white;
+  }
+  .div-front-end {
+    width: 100%;
+    margin-top: 5px;
+    color: white;
+    /* background-color: white; */
+  }
+  .p-front-end-text {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding: 5px 0 5px 0;
+    color: darkblue;
+  }
+  .div-html,
+  .div-css,
+  .div-js,
+  .div-react {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 2px 0 2px 10px;
+    /* background-color: rgb(75, 52, 11); */
+  }
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .course {
+    width: 15%;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 12px;
+    padding-right: 10px;
+
+    color: white;
+    /* background-color: wheat; */
+  }
+  .span-container {
+    width: 65%;
+    height: 12px;
+    border-radius: 0 10px 10px 0;
+    background-color: white;
+  }
+  .content {
+    font-size: 12px;
+    height: 12px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    background-color: darkblue;
+  }
+  .content-html {
+    width: 95%;
+  }
+  .content-css {
+    width: 90%;
+  }
+  .content-js {
+    width: 90%;
+  }
+  .content-react {
+    width: 89%;
+  }
+  .content-express {
+    width: 89%;
+  }
+  .content-php {
+    width: 87%;
+  }
+  .content-mongodb {
+    width: 89%;
+  }
+  .content-mysql {
+    width: 87%;
+  }
+}
+
+/* pc */
+@media only screen and (min-width: 992px) {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  #center-container {
+    width: 100%;
+    min-height: 100vh;
+    background-image: url('https://th.bing.com/th/id/OIP.rD3HKS-wifDypiIoQbkF_AHaEP?pid=ImgDet&rs=1');
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* opacity: 0.5; */
+    background-color: rgba(255, 255, 255, 0.2);
+    padding-top: 20px;
+  }
+  .div-my-name {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    padding: 25px 0 0px;
+    margin-top: 40px;
+    /* background-color: thistle; */
+  }
+  .p-name {
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: 0.5px;
+    color: whitesmoke;
+  }
+  .div-title {
+    width: 25%;
+    margin: auto;
+    text-align: center;
+    /* background-color: rgb(187, 105, 187); */
+  }
+  .p-title {
+    font-size: 14px;
+    font-family: cursive;
+    font-style: italic;
+    color: rgb(180, 27, 111);
+  }
+  .div-qoute {
+    width: 10%;
+    margin: auto;
+    margin-top: 15px;
+    text-align: center;
+    padding: 5px;
+    border: 1px solid whitesmoke;
+    /* border-right: 2px solid whitesmoke; */
+    /* background-color: rgb(187, 105, 187); */
+  }
+  .p-qoute {
+    font-size: 15px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: whitesmoke;
+  }
+  .div-arrow-down {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    bottom: 50px;
+    /* background-color: paleturquoise; */
+  }
+  #arrow-down {
+    font-size: 30px;
+    color: rgb(204, 32, 126);
+  }
+
+  /* about */
+  .div-for-about {
+    width: 100%;
+    min-height: 100vh;
+    padding: 50px 0;
+    background-color: #aab6fb;
+  }
+  .div-about {
+    width: 35%;
+    margin: auto;
+    text-align: center;
+    padding: 10px;
+    /* background-color: rgb(187, 105, 187); */
+  }
+  .p-about {
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    padding: 10px;
+    color: white;
+    /* background-color: thistle; */
+  }
+  .about-container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: stretch;
+    padding-bottom: 100px;
+    /* background-color: violet; */
+  }
+  .div-experience {
+    width: 25%;
+    margin-right: 15px;
+    /* background-color: violet; */
+  }
+  .div-for-skills {
+    width: 25%;
+    margin-left: 15px;
+    /* background-color: violet; */
+  }
+  /* .vertical {
+    width: 1px;
+    margin: 0 5px 0 5px;
+    background-color: white;
+  } */
+  .div-about-me {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .p-about-me {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  .p-message {
+    width: 100%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    color: white;
+  }
+
+  .div-exp {
+    width: 100%;
+    margin-bottom: 5px;
+  }
+  .p-exp {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid white;
+    color: white;
+  }
+  li {
+    color: white;
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    list-style-position: inside;
+    list-style-type: square;
+  }
+
+  /* 2 */
+  .div-skills {
+    width: 100%;
+    border: 1px solid white;
+  }
+  .p-skills {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px 0 5px 0;
+    border-bottom: 1px solid whitesmoke;
+    color: white;
+  }
+  .div-front-end {
+    width: 100%;
+    margin-top: 5px;
+    color: white;
+    /* background-color: white; */
+  }
+  .p-front-end-text {
+    width: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    padding: 5px 0 5px 0;
+    color: darkblue;
+  }
+  .div-html,
+  .div-css,
+  .div-js,
+  .div-react {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 2px 0 2px 10px;
+    /* background-color: wheat; */
+  }
+  span {
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .course {
+    width: 80px;
+    display: inline-block;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    padding-right: 10px;
+
+    color: white;
+    /* background-color: wheat; */
+  }
+  .span-container {
+    width: 130px;
+    height: 13px;
+    border-radius: 0 10px 10px 0;
+    background-color: white;
+  }
+  .content {
+    font-size: 12px;
+    height: 13px;
+    text-align: center;
+    border-radius: 0 10px 10px 0;
+    color: white;
+    background-color: darkblue;
+  }
+  .content-html {
+    width: 120px;
+  }
+  .content-css {
+    width: 115px;
+  }
+  .content-js {
+    width: 115px;
+  }
+  .content-react {
+    width: 112px;
+  }
+  .content-express {
+    width: 115px;
+  }
+  .content-php {
+    width: 110px;
+  }
+  .content-mongodb {
+    width: 115px;
+  }
+  .content-mysql {
+    width: 110px;
+  }
+}
