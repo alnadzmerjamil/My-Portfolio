@@ -1,55 +1,389 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+}
 .project-container {
-  width: 99%;
+  width: 100%;
   margin: auto;
-  border: 1px solid red;
+  overflow: hidden;
 }
 .project {
   width: 100%;
-  /* min-height: 100vh; */
+  min-height: 100vh;
   display: flex;
   flex-wrap: wrap;
   justify-content: flex-start;
-  align-items: flex-start;
-  padding: 10px;
+  align-items: center;
 }
-.project p {
-  font-size: 8px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
+
 .div-lt {
   width: 100%;
   position: relative;
-  background-color: cornflowerblue;
+  /* background-color: cornflowerblue; */
 }
 img {
   width: 100%;
 }
+
 .div-project-name {
   position: absolute;
-  top: 32%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  top: 20px;
+  left: 25px;
+  /* background-color: chocolate; */
 }
-span {
-  display: inline-block;
-  padding: 2px;
-  font-size: 7px;
+.div-project-name p {
+  font-family: monospace;
+  font-size: 14px;
+  font-weight: bolder;
+}
+.buddy-shop-text {
+  position: absolute;
+  top: 25px;
+  left: 25px;
+}
+.blackjact-text {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+}
+.travel-text {
+  position: absolute;
+  top: 35px;
+  left: 25px;
+}
+.project-description {
+  position: absolute;
+  top: 33px;
+  left: 20px;
+  right: 20px;
+  padding: 5px;
+  font-size: 12px;
   font-family: Arial, Helvetica, sans-serif;
-  background-color: lightgray;
+  /* background-color: burlywood; */
+}
+.buddy-shop-description {
+  position: absolute;
+  top: 40px;
+  left: 20px;
+  right: 20px;
+}
+.blackjack-description,
+.travel-description {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+  right: 20px;
+}
+.blackjack-description {
+  position: absolute;
+  top: 55px;
+  left: 20px;
+  right: 20px;
+}
+.div-tech {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  padding: 5px;
+  /* background-color: cadetblue; */
+}
+.div-tech-buddy-shop {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  padding: 5px;
+}
+.div-tech-blackjack {
+  position: absolute;
+  top: 130px;
+  left: 20px;
+  padding: 5px;
+}
+
+.div-tech p {
+  font-family: monospace;
+  font-size: 13px;
+}
+.p-tech {
+  display: inline;
+}
+.div-tech span {
+  border-radius: 3px;
+  padding: 2px 5px;
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  color: white;
+  background-color: rgb(48, 45, 45);
 }
 .div-button {
   margin-top: 5px;
+  display: inline;
 }
-button {
-  font-size: 8px;
+.div-button a {
+  border: none;
+  outline: none;
+  font-size: 10px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding: 1px 5px;
+  border-radius: 3px;
+  cursor: pointer;
+  color: rgb(24, 22, 22);
+  background-color: lightgray;
+}
+.div-button a:hover {
+  transition: 0.5s;
+  background-color: rgb(192, 188, 188);
+}
+@media only screen and (min-width: 375px) and (max-width: 767px) {
+  .div-project-name {
+    position: absolute;
+    top: 32px;
+    left: 40px;
+    /* background-color: chocolate; */
+  }
+  .div-project-name p {
+    font-family: monospace;
+    font-size: 17px;
+    font-weight: bolder;
+  }
+  .project-description {
+    position: absolute;
+    top: 55px;
+    left: 35px;
+    right: 30px;
+    padding: 5px;
+    font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: burlywood; */
+  }
+  .div-tech {
+    position: absolute;
+    top: 145px;
+    left: 35px;
+    padding: 5px;
+  }
+  .p-tech,
+  .div-button {
+    display: block;
+  }
+  .div-tech-buddy-shop {
+    position: absolute;
+    top: 135px;
+    left: 35px;
+    padding: 5px;
+  }
+  .div-tech-blackjack {
+    position: absolute;
+    top: 135px;
+    left: 35px;
+    padding: 5px;
+  }
+  .div-tech p {
+    font-family: monospace;
+    font-size: 15px;
+  }
+  .div-tech span {
+    border-radius: 3px;
+    padding: 2px 5px;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(48, 45, 45);
+  }
+
+  .div-button a {
+    border: none;
+    outline: none;
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 1px 5px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(24, 22, 22);
+    background-color: lightgray;
+  }
+  .div-button a:hover {
+    transition: 0.5s;
+    background-color: rgb(192, 188, 188);
+  }
 }
 
-@media only screen and (min-width: 992px) {
+/* tab */
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .div-project-name {
+    position: absolute;
+    top: 70px;
+    left: 70px;
+    /* background-color: chocolate; */
+  }
+  .div-project-name p {
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .project-description {
+    position: absolute;
+    top: 110px;
+    left: 65px;
+    right: 65px;
+    padding: 5px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: burlywood; */
+  }
+  .div-tech {
+    position: absolute;
+    top: 210px;
+    left: 65px;
+    padding: 5px;
+  }
+  .p-tech,
+  .div-button {
+    display: block;
+  }
+  .div-tech-buddy-shop {
+    position: absolute;
+    top: 210px;
+    left: 65px;
+    padding: 5px;
+  }
+  .div-tech-blackjack {
+    position: absolute;
+    top: 210px;
+    left: 65px;
+    padding: 5px;
+  }
+  .div-tech p {
+    font-family: monospace;
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  .div-tech span {
+    border-radius: 3px;
+    padding: 5px 7px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(48, 45, 45);
+  }
+  .div-button {
+    margin-top: 15px;
+  }
+  .div-button a {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 7px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(24, 22, 22);
+    background-color: lightgray;
+  }
+  .div-button a:hover {
+    transition: 0.5s;
+    background-color: rgb(192, 188, 188);
+  }
+}
+/* pc 992to 1024px */
+@media only screen and (min-width: 992px) and (max-width: 1024px) {
+  .p-tech,
+  .div-button {
+    display: block;
+  }
   .project-container {
     width: 55%;
-
     margin: auto;
-    border: 1px solid red;
+    overflow: hidden;
+  }
+
+  .div-project-name {
+    position: absolute;
+    top: 45px;
+    left: 85px;
+    /* background-color: chocolate; */
+  }
+  .div-project-name p {
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .project-description {
+    position: absolute;
+    top: 75px;
+    left: 80px;
+    right: 50px;
+    padding: 5px;
+    font-size: 17px;
+    font-family: Arial, Helvetica, sans-serif;
+    /* background-color: burlywood; */
+  }
+  .div-tech {
+    position: absolute;
+    top: 210px;
+    left: 80px;
+    padding: 5px;
+  }
+  .div-tech-buddy-shop {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    padding: 5px;
+    /* background-color: cadetblue; */
+  }
+  .div-tech-blackjack {
+    position: absolute;
+    top: 200px;
+    left: 80px;
+    padding: 5px;
+    /* background-color: cadetblue; */
+  }
+  .div-tech p {
+    font-family: monospace;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .div-tech span {
+    border-radius: 3px;
+    padding: 3px 8px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(48, 45, 45);
+  }
+  .div-button {
+    margin-top: 10px;
+  }
+  .div-button a {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 3px 8px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(24, 22, 22);
+    background-color: lightgray;
+  }
+  .div-button a:hover {
+    transition: 0.5s;
+    background-color: rgb(192, 188, 188);
+  }
+}
+/* pc */
+@media only screen and (min-width: 1025px) {
+  .p-tech,
+  .div-button {
+    display: block;
+  }
+  .project-container {
+    width: 55%;
+    margin: auto;
+    overflow: hidden;
   }
   .project {
     width: 100%;
@@ -58,33 +392,88 @@ button {
     flex-wrap: wrap;
     justify-content: flex-start;
     align-items: center;
+    padding: 5px;
+    /* background-color: burlywood; */
   }
-  .project p {
-    font-size: 14px;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-  }
+
   .div-lt {
     width: 100%;
     position: relative;
-    background-color: cornflowerblue;
+    /* background-color: cornflowerblue; */
   }
   img {
     width: 100%;
   }
   .div-project-name {
     position: absolute;
-    top: 32%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    top: 60px;
+    left: 100px;
+    /* background-color: chocolate; */
   }
-  .div-project-name span {
-    display: inline-block;
+  .div-project-name p {
+    font-family: monospace;
+    font-size: 25px;
+    font-weight: bolder;
+  }
+  .project-description {
+    position: absolute;
+    top: 110px;
+    left: 100px;
+    right: 80px;
     padding: 5px;
-    font-size: 14px;
+    font-size: 17px;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: lightgray;
+    /* background-color: burlywood; */
+  }
+  .div-tech {
+    position: absolute;
+    top: 250px;
+    left: 100px;
+    padding: 5px;
+  }
+  .div-tech-buddy-shop {
+    position: absolute;
+    top: 230px;
+    left: 100px;
+    padding: 5px;
+    /* background-color: cadetblue; */
+  }
+  .div-tech-blackjack {
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    padding: 5px;
+    /* background-color: cadetblue; */
+  }
+  .div-tech p {
+    font-family: monospace;
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  .div-tech span {
+    border-radius: 3px;
+    padding: 5px 10px;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    background-color: rgb(48, 45, 45);
   }
   .div-button {
-    margin-top: 5px;
+    margin-top: 20px;
+  }
+  .div-button a {
+    border: none;
+    outline: none;
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 5px 10px;
+    border-radius: 3px;
+    cursor: pointer;
+    color: rgb(24, 22, 22);
+    background-color: lightgray;
+  }
+  .div-button a:hover {
+    transition: 0.5s;
+    background-color: rgb(192, 188, 188);
   }
 }
