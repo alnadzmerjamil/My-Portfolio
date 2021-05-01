@@ -20,6 +20,7 @@ let anchors = document.querySelectorAll('.a-phone');
 anchors.forEach((a) => {
   a.addEventListener('click', function () {
     navOnPhone.style.display = 'none';
+    window.removeEventListener('scroll', noScroll);
   });
 });
 
