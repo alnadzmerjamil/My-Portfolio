@@ -7,6 +7,87 @@
     <link rel="stylesheet" type="text/css" href="project1.css" />
     <title>projects</title>
   </head>
+  <style>
+    .main-credential {
+      width: 100%;
+      display: none;
+      min-height: 100vh;
+      position: absolute;
+      top: 0;
+      background-color: rgba(128, 128, 128, 0.9);
+    }
+    .mini-credential {
+      width: 100%;
+      margin: auto;
+      font-family: sans-serif;
+      padding: 20px 30px;
+      background-color: whitesmoke;
+    }
+    .mini-credential h4 {
+      text-align: center;
+      margin-bottom: 15px;
+    }
+    .mini-credential h5 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .mini-credential label {
+      width: 100%;
+      display: inline-block;
+      font-size: 13px;
+      padding: 5px;
+    }
+    .lbl {
+      border: 1px solid lightgray;
+    }
+    .credential-button {
+      text-align: right;
+      margin-top: 5px;
+    }
+    .credential-button button,
+    a {
+      border: none;
+      font-size: 14px;
+      padding: 6px 15px;
+      margin-left: 10px;
+      border-radius: 3px;
+      cursor: pointer;
+      color: black;
+      background-color: lightgray;
+    }
+    .credential-button a:hover,
+    .credential-button button:hover {
+      transition: 0.5s;
+      background-color: rgb(192, 188, 188);
+    }
+
+    @media only screen and (min-width: 768px) and (max-width: 991px) {
+      .mini-credential {
+        width: 70%;
+        min-height: 100vh;
+      }
+      .credential-button {
+        text-align: right;
+        margin-top: 15px;
+      }
+      .mini-credential label {
+        font-size: 16px;
+      }
+    }
+
+    @media only screen and (min-width: 992px) {
+      .mini-credential {
+        width: 30%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+      .mini-credential label {
+        font-size: 15px;
+      }
+    }
+  </style>
   <body>
     <div class="project-container">
       <div class="project project1" id="foovorite">
@@ -31,7 +112,7 @@
             <span>PHP Laravel</span> <span>mySQL</span>
             <span>Google MAP API</span>
             <div class="div-button">
-              <a href="https://foovorite-food-delivery.herokuapp.com/">OPEN</a>
+              <a class="open-credential">OPEN</a>
               <a href="https://github.com/alnadzmerjamil/foovorite/tree/master"
                 >GITHUB</a
               >
@@ -40,6 +121,54 @@
         </div>
       </div>
     </div>
-    <script src="project.js"></script>
+    <!-- credential -->
+    <div class="main-credential">
+      <div class="mini-credential">
+        <h4>Use the following credentials to login</h4>
+        <h5>REGULAR USER</h5>
+        <label for="">Username</label><br />
+        <label for="" class="lbl">demo101</label><br />
+        <label for="">Password</label><br />
+        <label for="" class="lbl">demo_101</label><br /><br />
+        <h5>MERCHANT</h5>
+        <label for="">Username</label><br />
+        <label for="" class="lbl">merchant1</label><br />
+        <label for="">Password</label><br />
+        <label for="" class="lbl">merchant1</label><br />
+        <label for="">Resto ID</label><br />
+        <label for="" class="lbl">1</label><br /><br />
+        <h5>RIDER</h5>
+        <label for="">Username</label><br />
+        <label for="" class="lbl">rider1</label><br />
+        <label for="">Password</label><br />
+        <label for="" class="lbl">rider1000</label><br />
+        <div class="credential-button">
+          <button class="cancel-credential">Cancel</button>
+          <a
+            class="open-credential"
+            href="https://foovorite-food-delivery.herokuapp.com/"
+            target="_blank"
+            >OK</a
+          >
+        </div>
+      </div>
+    </div>
+    <script>
+      let mainCredential = document.querySelector('.main-credential');
+      let cancel = document.querySelector('.cancel-credential');
+      cancel.onclick = function () {
+        mainCredential.style.display = 'none';
+      };
+
+      let openCredential = document.querySelectorAll('.open-credential');
+      openCredential.forEach((e) => {
+        e.onclick = function () {
+          mainCredential.style.display = 'block';
+        };
+      });
+      mainCredential.onclick = function () {
+        this.style.display = 'none';
+      };
+    </script>
   </body>
 </html>
